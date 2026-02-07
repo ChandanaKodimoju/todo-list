@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheeet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Todo list App</h1>
+    <div class="container">
+        <h1>Todo List App</h1><br><br>
 
-    <form onsubmit="addTask(event);" name="myForm">
-        <input type="text" name="task">
-        <input type="submit" >
-    </form>
-    <div id="ref">
-        <!-- html code form js -->
+        <form onsubmit="addTask(event);" name="myForm">
+            <input type="text" placeholder="Enter Your education" name="task" required>
+           <!-- <input type="text" placeholder="Enter Your date" name="Date" required> -->
+            <input type="date" name="date">
+
+            
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="status" value="Ongoing">Ongoing
+                </label>
+                <label>
+                    <input type="radio" name="status" value="Completed">Completed
+                </label>
+            </div>
+
+
+            <input type="submit" name="add">
+        </form>
+        <div id="ref">
+
+        </div>
     </div>
-    <script src="./script.js"></script>
 
+    <script src="./script.js"></script>
 </body>
 </html>
